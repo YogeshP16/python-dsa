@@ -1,0 +1,25 @@
+#in given array find target value by summation of two values in the array
+#a+b=210
+#210 is the  target
+
+
+def binarysearch(arr,x,left,right):
+    while(left <=right):
+        if arr[left]+arr[right]== x:
+            return(left,right)
+        elif arr[left]+arr[right] < x:
+            left=left+1
+            #right=right-1
+        else:
+            right=right-1
+            #left=left+1
+
+#driver code
+arr=[20,40,60,90,120,240]
+x=210
+left=0
+right= len(arr)-1
+
+result=binarysearch(arr,x,left,right)
+print("target value",x)
+print(result)
