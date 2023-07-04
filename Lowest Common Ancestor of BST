@@ -8,6 +8,13 @@ Input: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 8
 Output: 6
 Explanation: The LCA of nodes 2 and 8 is 6.
 
+Tc= O(log N)
+
+This solution efficiently finds the lowest common ancestor (LCA) of two nodes p and q
+in a binary search tree (BST) by recursively comparing their values with the current node.
+It navigates left or right based on the comparisons until it reaches the LCA. 
+The time complexity is O(log N) on average, where N is the number of nodes in the BST.
+
 
 #Recursive approach
 
